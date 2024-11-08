@@ -78,7 +78,7 @@
 @font-face {
   font-family: 'Kharkiv Tone';
   font-display: swap;
-  src: url("../fonts/Kharkiv Tone 04.ttf") format("ttf"), url("../fonts/Kharkiv Tone 04.woff2") format("woff2"), url("../fonts/Kharkiv Tone 04.woff") format("woff");
+  src: url("../fonts/Kharkiv Tone 04.10.2020.ttf") format("ttf"), url("../fonts/Kharkiv Tone 04.10.2020.woff2") format("woff2"), url("../fonts/Kharkiv\ Tone\ 04.10.2020.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
