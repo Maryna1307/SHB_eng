@@ -541,14 +541,33 @@ img {
 }
 .first-screen__title {
   max-width: 1042px;
-  font-size: 99px;
+  font-size: 95px;
   font-weight: 700;
-  margin-bottom: 79px;
+  margin-bottom: 86px;
   position: relative;
   z-index: 2;
   opacity: 0;
   animation: slideInFromLeft 1s ease forwards;
   animation-delay: 0.6s;
+}
+
+.first-screen__title span {
+  position: relative;
+}
+
+.first-screen__title span::after {
+  content: '';
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  background-image: url(../img/underline.png);
+  width: 85%;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat; 
+  opacity: 0;
+  animation: fadeInBtn 2s ease forwards;
+  animation-delay: 1s;
 }
 .first-screen__buttons {
   display: flex;
@@ -560,7 +579,7 @@ img {
 }
 .first-screen__btn {
   padding: 27px 31px 23px;
-  font-family: Nexa;
+  font-family: Nexa, sans-serif;
   font-size: 27px;
   font-weight: 700;
   letter-spacing: 4.05px;
@@ -662,7 +681,7 @@ img {
   z-index: 2;
 }
 .title__text_big span:nth-of-type(1) {
-  font-weight: 900;
+  font-weight: 800;
 }
 .title__text_big .green {
   position: relative;
@@ -843,6 +862,7 @@ img {
   display: none;
 }
 .services .spoiler__btn {
+  font-family: Nexa, sans-serif;
   padding: 26px 43px;
   border: 2px solid #838383;
   border-radius: 10px;
@@ -1055,9 +1075,10 @@ img {
 }
 .clients__descr {
   position: absolute;
-  top: 76px;
-  right: 70px;
-  max-width: 280px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1066,38 +1087,50 @@ img {
   opacity: 0;
 }
 .clients__link {
-  padding: 20px 31px 17px;
-  font-family: Nexa;
-  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  padding: 27px 31px 23px;
+  font-family: Nexa, sans-serif;
+  font-size: 27px;
+  font-weight: 500;
   letter-spacing: 4.05px;
   border-radius: 10px;
+  border: 1px solid #ffffff;
+  background: none;
   text-decoration: none;
   color: #FFFFFF;
-  position: relative;
-  left: -20%;
 }
-.clients__link_orange {
+.clients__link_orange:hover {
+  border: none;
   background: #FAAF3A;
   color: #000000;
   font-weight: 500;
 }
-.clients__link_brown {
+.clients__link_brown:hover {
+  border: none;
   background: #59101E;
 }
-.clients__link_yellow {
+.clients__link_yellow:hover {
+  border: none;
   background: #FFD600;
   color: #000000;
   font-weight: 500;
 }
-.clients__link_red {
+.clients__link_red:hover {
+  border: none;
   background: #CC0000;
 }
-.clients__link_white {
+.clients__link_white:hover {
+  border: none;
   background: #FFFFFF;
   color: #000000;
   font-weight: 500;
 }
-.clients__link_green {
+.clients__link_green:hover {
+  border: none;
   background: #399600;
 }
 .clients__info {
@@ -1123,8 +1156,9 @@ img {
   justify-content: flex-end;
   align-items: center;
   gap: 12.5px;
-  margin-bottom: 169px;
-  margin-right: -100%;
+  position: absolute;
+  top: 10%;
+  right: -100%;
 }
 .clients .circle {
   display: block;
@@ -1199,7 +1233,7 @@ img {
 }
 
 .clients__item:hover .circles {
-  margin-right: -25px;
+  right: 10%;
   transition: 0.5s;
 }
 
@@ -1229,7 +1263,7 @@ img {
   content: url("../img/why-us_circles.png");
   position: absolute;
   mix-blend-mode: multiply;
-  top: -520px;
+  top: -360px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1366,9 +1400,13 @@ img {
   font-weight: 600;
   font-style: italic;
 }
-.contacts__text span:nth-of-type(2) {
+.contacts__phone {
   font-weight: 600;
   color: #FF0054;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 .contacts__form {
   min-width: 554px;
@@ -1437,7 +1475,7 @@ img {
   margin-bottom: 83px;
 }
 .footer__email_text {
-  font-weight: 400;
+  font-weight: 300;
 }
 .footer__email_e {
   font-weight: 700;
@@ -1575,6 +1613,7 @@ img {
     max-width: 840px;
     margin-bottom: 67px;
   }
+
   .first-screen__buttons {
     gap: 33px;
   }
@@ -1613,7 +1652,7 @@ img {
     font-size: 132px;
   }
   .title__trusted p:nth-of-type(3) {
-    font-size: 17px;
+    font-size: 22px;
   }
   .what-we-do__title {
     font-size: 163px;
@@ -1686,9 +1725,6 @@ img {
   .clients__container {
     padding: 130px 53px 0;
   }
-  .clients__link {
-    left: -2%;
-  }
   .clients__wrapper {
     gap: 20px;
     padding-bottom: 30px;
@@ -1699,6 +1735,9 @@ img {
   }
   .clients__name {
     font-size: 23px;
+  }
+  .clients__link {
+    padding: 10px 29px 6px;
   }
   .clients__service {
     font-size: 10px;
@@ -1712,9 +1751,6 @@ img {
   .clients .circle {
     width: 25px;
     height: 25px;
-  }
-  .clients .clients__item:hover .circles {
-    margin-right: -35px;
   }
   .why-us {
     background-position: center calc(50% - 328px);
@@ -1969,12 +2005,6 @@ img {
   }
   .clients__btn {
     font-size: 21px;
-  }
-  .clients__descr {
-    right: 7%;
-  }
-  .clients__link {
-    left: -9%;
   }
   .why-us {
     background-position: center calc(50% - 255px);
@@ -2325,9 +2355,6 @@ img {
     width: 35px;
     height: 35px;
   }
-  .clients__link {
-    left: -44%;
-  }
   .why-us {
     background-image: none;
   }
@@ -2599,6 +2626,9 @@ img {
     margin-bottom: 36px;
     max-width: 295px;
   }
+  .first-screen__title span::after {
+    bottom: -37px;
+  }
   .first-screen__btn {
     font-size: 11px;
     padding: 10px 8px 8px;
@@ -2677,20 +2707,12 @@ img {
     gap: 10px;
     padding-bottom: 20px;
   }
-  .clients .circles {
-    margin-bottom: 100px;
-  }
   .clients .circle {
     width: 18px;
     height: 18px;
   }
   .clients__descr {
     font-size: 12px;
-    right: 2%;
-  }
-  .clients__link {
-    left: -14%;
-    padding: 10px 8px 6px;
   }
   .clients__info {
     right: 13px;
@@ -2700,9 +2722,6 @@ img {
   }
   .clients__service {
     font-size: 12px;
-  }
-  .clients .clients__item:hover .circles {
-    margin-right: 10px;
   }
   .why-us__title {
     font-size: 55px;
@@ -2843,11 +2862,5 @@ img {
   }
   .what-we-do__title {
     font-size: 44px;
-  }
-  .clients__link {
-    left: 0;
-  }
-  .clients .circles {
-    margin-bottom: 50px;
   }
 }
