@@ -738,7 +738,7 @@ img {
   font-size: 200px;
   font-weight: 400;
   margin-bottom: 23px;
-  word-spacing: 282px;
+  word-spacing: 240px;
   position: relative;
 }
 .what-we-do__title span {
@@ -1656,7 +1656,7 @@ img {
   }
   .what-we-do__title {
     font-size: 163px;
-    word-spacing: 227px;
+    word-spacing: 200px;
   }
   .what-we-do__title span {
     font-size: 188px;
@@ -1934,7 +1934,7 @@ img {
   }
   .what-we-do__title {
     font-size: 125px;
-    word-spacing: 170px;
+    word-spacing: 150px;
   }
   .what-we-do__title span {
     font-size: 145px;
