@@ -793,6 +793,7 @@ img {
 }
 .services .spoiler__title_green::after {
   background-color: #4EFF00;
+  opacity: 0.65;
 }
 .services .spoiler__title_blue::after {
   background-color: #0EB4AA;
@@ -937,8 +938,8 @@ img {
   -webkit-text-stroke: 1px #FFFFFF;
 }
 .services .spoiler__title.active .pink {
-  -webkit-text-fill-color: #FF0054;
-  -webkit-text-stroke: #FF0054;
+  -webkit-text-fill-color: #e80952;
+  -webkit-text-stroke: #e80952;
 }
 .services .spoiler__title.active .green {
   -webkit-text-fill-color: #4EFF00;
