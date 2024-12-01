@@ -938,8 +938,8 @@ img {
   -webkit-text-stroke: 1px #FFFFFF;
 }
 .services .spoiler__title.active .pink {
-  -webkit-text-fill-color: #e80952;
-  -webkit-text-stroke: #e80952;
+  -webkit-text-fill-color: #d4235d;
+  -webkit-text-stroke: #d4235d;
 }
 .services .spoiler__title.active .green {
   -webkit-text-fill-color: #4EFF00;
@@ -1402,6 +1402,20 @@ img {
   font-size: 100px;
   font-weight: 700;
   margin-bottom: 94px;
+  position: relative;
+}
+.contacts__title::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 130px;
+  background: #FF0054;
+  border-radius: 50%;
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
 }
 .contacts__text {
   font-family: Raleway;
@@ -1416,7 +1430,6 @@ img {
   font-weight: 600;
   color: #FF0054;
 }
-
 .no-wrap {
   white-space: nowrap;
 }
@@ -2462,6 +2475,9 @@ img {
     position: relative;
     z-index: 5;
   }
+  .contacts__title::after {
+    display: none;
+  }
   .contacts__title::before {
     content: "";
     display: block;
@@ -2897,5 +2913,8 @@ img {
   .clients__info {
     right: 10px;
     bottom: 20px;
+  }
+  .why-us__container {
+    padding: 30px;
   }
 }
