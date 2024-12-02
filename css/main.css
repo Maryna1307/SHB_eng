@@ -812,7 +812,7 @@ img {
   display: none;
   padding-top: 50px;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 .services .spoiler__descr_gap {
   gap: 100px;
@@ -932,14 +932,15 @@ img {
 }
 .services .spoiler__title:hover span {
   -webkit-text-fill-color: #FFFFFF;
+  -webkit-text-stroke: 0px #FFFFFF;
 }
 .services .spoiler__title.active {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #FFFFFF;
 }
 .services .spoiler__title.active .pink {
-  -webkit-text-fill-color: #d4235d;
-  -webkit-text-stroke: #d4235d;
+  -webkit-text-fill-color: #ff4a86;
+  -webkit-text-stroke: #ff4a86;
 }
 .services .spoiler__title.active .green {
   -webkit-text-fill-color: #4EFF00;
@@ -2354,6 +2355,9 @@ img {
   }
   .services .spoiler__list {
     font-size: 30px;
+  }
+  .services .spoiler__btns {
+    margin-bottom: 30px;
   }
   .services .spoiler__btns_mt, .services .spoiler__btns_blue {
     display: none;
