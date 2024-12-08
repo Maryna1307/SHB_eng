@@ -1299,7 +1299,7 @@ img {
   font-weight: 400;
 }
 .why-us__title::after {
-  content: url(../img/why-us_question.png);
+  content: url(../img/why-us_question.svg);
   position: absolute;
   right: 0;
   top: 0;
@@ -1977,6 +1977,7 @@ img {
   .services .spoiler__title span {
     font-size: 17.5px;
     margin-right: 70px;
+    -webkit-text-stroke: 0.63px;
   }
   .services .spoiler__descr {
     justify-content: space-between;
@@ -2323,6 +2324,7 @@ img {
   .services .spoiler__title span {
     font-size: 20px;
     margin-right: 40px;
+    -webkit-text-stroke: 0.4px;
   }
   .services .spoiler__descr {
     flex-direction: column-reverse;
@@ -2410,7 +2412,7 @@ img {
     margin-bottom: 220px;
   }
   .why-us__title::after {
-    content: url(../img/why-us_question_tablet.png);
+    content: url(../img/why-us_question_tablet.svg);
   }
   .why-us__items {
     max-width: 534px;
@@ -2712,6 +2714,7 @@ img {
   .services .spoiler__title span {
     font-size: 12px;
     margin-right: 19px;
+    -webkit-text-stroke: 0.19px;
   }
   .services .spoiler__img_mt {
     margin-top: -78px;
@@ -2770,12 +2773,12 @@ img {
   }
   .why-us__title {
     font-size: 55px;
-    max-width: 282px;
+    max-width: 275px;
     padding-right: 49px;
     margin-bottom: 138px;
   }
   .why-us__title::after {
-    content: url(../img/why-us_question_mobile.png);
+    content: url(../img/why-us_question_mobile.svg);
   }
   .why-us__items {
     max-width: 350px;
